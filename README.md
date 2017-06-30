@@ -1,4 +1,5 @@
 # Dump1090 Snap
+A dump1090 server running via the Snap package system. This will run a dump1090 server for local only connections ready to be used by other apps such as fr24feed. 
 
 # Ussage
 
