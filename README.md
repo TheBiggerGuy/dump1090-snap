@@ -18,7 +18,12 @@ sudo snap refresh dump1090-net
 sudo journalctl -u snap.dump1090-net.dump1090.service
 ```
 
-## Run Interactive
+## Test
+### Run Interactive
 ```bash
 sudo snap run dump1090-net.dump1090-interactive
+```
+### Connect to Server
+```bash
+nc 127.0.0.1 30003
 ```
