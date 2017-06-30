@@ -1,4 +1,4 @@
-name: dump1090
+name: dump1090-net
 version: '0.0.1'
 summary: Dump1090 is a simple Mode S decoder for RTLSDR devices
 description: |
