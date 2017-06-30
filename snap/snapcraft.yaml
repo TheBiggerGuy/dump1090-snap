@@ -13,7 +13,7 @@ apps:
     command: 'dump1090 --net --net-bind-address=127.0.0.1 --debug n'
     daemon: simple
     plugs:
-     - raw-sub
+     - raw-usb
      - network-bind
   dump1090-interactive:
     command: 'dump1090 --interactive'
