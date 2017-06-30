@@ -1,0 +1,43 @@
+name: dump1090
+version: '0.0.1'
+summary: Dump1090 is a simple Mode S decoder for RTLSDR devices
+description: |
+    Dump1090 is a simple Mode S decoder for RTLSDR devices. This snap allows it
+    to be used used withing the Snap package system.
+
+grade: devel
+confinement: strict
+
+apps:
+  dump1090:
+    command: 'dump1090 --net --net-bind-address=127.0.0.1 --debug n'
+    daemon: simple
+    plugs:
+     - raw-sub
+     - network-bind
+  dump1090-interactive:
+    command: 'dump1090 --interactive'
+    plugs:
+     - raw-usb
+
+parts:
+  librtlsdr:
+    plugin: cmake
+    source: git://git.osmocom.org/rtl-sdr
+    source-type: git
+    build-packages:
+     - build-essential
+     - libusb-1.0-0-dev
+    stage-packages:
+     - libusb-1.0-0
+  dump1090:
+    plugin: make
+    source: https://github.com/MalcolmRobb/dump1090.git
+    source-type: git
+    build-packages:
+     - build-essential
+     - pkg-config
+    artifacts:
+     - dump1090
+    after: [ librtlsdr ]
+
