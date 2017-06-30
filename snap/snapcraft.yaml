@@ -14,11 +14,13 @@ apps:
     daemon: simple
     plugs:
      - raw-usb
+     - hardware-observe # /sys/bus/usb/*
      - network-bind
   dump1090-interactive:
     command: 'dump1090 --interactive'
     plugs:
      - raw-usb
+     - hardware-observe # /sys/bus/usb/*
 
 parts:
   librtlsdr:
