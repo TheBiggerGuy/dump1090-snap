@@ -10,7 +10,7 @@ confinement: strict
 
 apps:
   dump1090:
-    command: 'dump1090 --net --net-bind-address 127.0.0.1 --debug n'
+    command: 'dump1090 --net --net-beast --net-bind-address 127.0.0.1 --debug n --mlat'
     daemon: simple
     plugs:
      - raw-usb
