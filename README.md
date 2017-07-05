@@ -25,6 +25,11 @@ sudo journalctl -u snap.dump1090-net.dump1090.service
 sudo snap run dump1090-net.dump1090-interactive
 ```
 ### Connect to Server
+#### AVR
 ```bash
 nc 127.0.0.1 30003
+```
+#### Beast
+```bash
+nc 127.0.0.1 30005 | xxd -p
 ```
