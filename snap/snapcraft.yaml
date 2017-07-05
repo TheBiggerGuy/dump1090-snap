@@ -19,7 +19,6 @@ apps:
     command: 'dump1090 --interactive'
     plugs:
      - raw-usb
-     - hardware-observe # /sys/bus/usb/*
 
 parts:
   librtlsdr:
