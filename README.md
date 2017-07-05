@@ -6,6 +6,7 @@ A dump1090 server running via the Snap package system. This will run a dump1090 
 ## Install
 ```bash
 sudo snap install dump1090-net
+sudo snap connect dump1090-net:raw-usb 
 ```
 
 ## Update
