@@ -2,7 +2,7 @@
 
 [![Snap Status](https://build.snapcraft.io/badge/TheBiggerGuy/dump1090-snap.svg)](https://build.snapcraft.io/user/TheBiggerGuy/dump1090-snap)
 
-A dump1090 server running via the Snap package system. This will run a dump1090 server for local only connections ready to be used by other apps such as fr24feed. 
+A dump1090 server running via the Snap package system. This will run a dump1090 server for local only connections ready to be used by other apps such as [fr24feed](https://github.com/TheBiggerGuy/fr24feed-snap). 
 
 # Usage
 
